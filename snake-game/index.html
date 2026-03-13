@@ -1,0 +1,89 @@
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/snake-game/src/style.css">
+</head>
+<body>
+<header>
+  <h1>QSnake</h1>
+</header>
+
+<div class="layout">
+
+  <div class="game-area">
+    <div class="hud">
+      <div class="hud-box">
+        <div class="hud-label">Счет</div>
+        <div class="hud-value" id="score-display">0</div>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">Лучший</div>
+        <div class="hud-value" id="best-display">0</div>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div class="overlay visible" id="overlay">
+        <div class="overlay-title" id="overlay-title">Готов?</div>
+        <div class="overlay-sub" id="overlay-sub">Используй стрелочки или WASD(сломались) чтобы двигаться</div>
+        <div class="controls">
+          <button class="btn btn-primary" id="start-btn">Старт</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-ghost" id="pause-btn" style="display:none">Пауза</button>
+      <button class="btn btn-ghost" id="restart-btn" style="display:none">Заново</button>
+    </div>
+
+    <div class="mobile-controls">
+      <div class="mob-row"><div class="mob-btn" id="m-up">↑</div></div>
+      <div class="mob-row">
+        <div class="mob-btn" id="m-left">←</div>
+        <div class="mob-btn" id="m-down">↓</div>
+        <div class="mob-btn" id="m-right">→</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="side-panel">
+    <div class="panel-box">
+      <div class="panel-title">Сложность</div>
+      <div class="diff-group">
+        <button class="diff-btn" data-speed="150">Легкая</button>
+        <button class="diff-btn active" data-speed="100">Средняя</button>
+        <button class="diff-btn" data-speed="60">Тяжелая</button>
+      </div>
+    </div>
+
+    <div class="panel-box">
+      <div class="panel-title">Рекорды</div>
+      <ul class="lb-list" id="lb-list">
+        <li class="lb-empty">Нет результатов</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <h2>Игра окончена!</h2>
+    <p id="modal-score-text">Твой результат: 0</p>
+    <input type="text" id="name-input" maxlength="16" placeholder="Твое имя" autocomplete="off"/>
+    <div class="modal-btns">
+      <button class="btn btn-primary" id="submit-btn">Сохранить результат</button>
+      <button class="btn btn-ghost" id="skip-btn">Пропустить</button>
+    </div>
+  </div>
+</div>
+
+<script src="/snake-game/src/config.js"></script>
+<script src="/snake-game/src/draw.js"></script>
+<script src="/snake-game/src/game.js"></script>
+<script src="/snake-game/src/main.js"></script>
+<script src="/snake-game/src/ui.js"></script>
+</body>
+</html>
