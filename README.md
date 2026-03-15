@@ -14,6 +14,6 @@
 *   **Умный спавн:** Еда никогда не появляется внутри тела змейки.
 
 
--- `npm install`
+`npm install`
 
--- `npm run dev`
+`npm run dev`
