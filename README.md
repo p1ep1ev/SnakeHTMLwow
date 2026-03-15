@@ -2,9 +2,9 @@
 
 Интерпретация классической игры «Змейка», созданная на **React 19**, **Vite** и **Tailwind CSS v4**. Проект выполнен в эстетике розового неона с адаптивным и просторным интерфейсом.
 
-![React](https://img.shields.io)
-![TailwindCSS](https://img.shields.io)
-![Vite](https://img.shields.io)
+![React]
+![TailwindCSS]
+![Vite]
 
 ## Особенности
 
