@@ -17,3 +17,6 @@
 `npm install`
 
 `npm run dev`
+
+## Deploy
+https://snake-tau-bay.vercel.app/
