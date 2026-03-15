@@ -1,0 +1,35 @@
+{
+  "name": "snakehtmlwow",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p1ep1ev/SnakeHTMLwow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p1ep1ev/SnakeHTMLwow/issues"
+  },
+  "homepage": "https://github.com/p1ep1ev/SnakeHTMLwow#readme",
+  "description": "",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
+    "vite": "^8.0.0"
+  }
+}
